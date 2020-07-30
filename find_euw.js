@@ -1,0 +1,1 @@
+db.Accounts.find({FromUrl: /euw/}, {_id: 0, UserName: 1, Password: 1}).skip(5).limit(5).toArray();
