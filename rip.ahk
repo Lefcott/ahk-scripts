@@ -10,6 +10,7 @@ SendFile(path) {
 
 MButton::
   Sleep, 500
+  Send, {Click}
   Send {a}{c}{c}{o}{u}{n}{t}{s}{=}
   Sleep, 1000
   SendFile("getAccounts.js")
@@ -19,6 +20,7 @@ MButton::
 
 ^!Numpad2::
 ^!2::
+  Send, {Click}
   Sleep, 500
   Send ^a {BackSpace}
   Sleep, 10

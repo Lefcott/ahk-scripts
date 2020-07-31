@@ -1,6 +1,15 @@
-(() => {
+(async () => {
+  const copyToClipboard = str => {
+    const el = document.createElement('textarea');
+    el.value = str;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+  };
   const list = document.getElementById('cclist');
-  const accounts = [
+  const server = document.getElementById('server');
+  let accounts = [
     {
         "UserName" : "Tatane123",
         "Password" : "tatane123",
@@ -38,15 +47,19 @@
           if (this[keys[i]](accounts[ii].FromUrl)) {
             if (!accs[keys[i]]) accs[keys[i]] = [];
             accs[keys[i]].push(accounts[ii]);
-            break;
           }
         }
       }
       return accs;
     }
   };
-  const oldXHR = window.XMLHttpRequest;
+  accounts = serverMapper.GetAccounts();
+  const keys = Object.keys(accounts);
+  let currKey = 0;
+  const updates = [];
+  const getUpdate = data => updates.map(update => `db.Accounts.updateOne(${JSON.stringify(update.where)}, ${JSON.stringify(update.set)})`).join(';\n');
 
+  const oldXHR = window.XMLHttpRequest;
   function newXHR() {
       var realXHR = new oldXHR();
       realXHR.addEventListener("readystatechange", function() {
@@ -55,15 +68,35 @@
           if (realXHR.status < 200 || realXHR.status > 299) throw new Error('Not 200');
           const body = JSON.parse(realXHR.response);
           console.log(body);
+          if (body.sonuc !== 'canli') return;
           const table = document.createElement('table');
           table.innerHTML = body.icerik;
           const trs = table.getElementsByTagName('tr');
           for (let i = 0; i < trs.length; i += 1) {
             const tr = trs[i];
-            const [user, ]
-            console.log(trs[i]);
+            const [, userData, capture] = tr.getElementsByTagName('td');
+            const [UserName] = userData.innerHTML.split(':');
+            let [RP, BlueEssence, Level, RefundsRemaining, TotalChamps, TotalSkins, Email, EmailVerified] = capture.innerHTML.split('<br>');
+            updates.push({
+              where: { UserName },
+              set: {
+                $set: {
+                  RP: +RP.split(':')[1].trim() || 0,
+                  BlueEssence: +BlueEssence.split(':')[1].trim() || 0,
+                  RefundsRemaining: +RefundsRemaining.split(':')[1].trim() || 0,
+                  TotalChamps: +TotalChamps.split(':')[1].trim() || 0,
+                  TotalSkins: +TotalSkins.split(':')[1].trim() || 0,
+                  Email: TotalSkins.split(':')[1].trim() || '',
+                  EmailVerified: EmailVerified.split(':')[1].trim() === 'Verified',
+                }
+              }
+            });
+            console.log(updates);
+            console.clear();
+            console.log(getUpdate(updates));
           }
-
+          currKey += 1;
+          if (keys[currKey]) startQuery(accounts[keys[currKey]]);
         } catch(e) {}
       }, false);
       return realXHR;
@@ -71,15 +104,16 @@
   window.XMLHttpRequest = newXHR;
 
   // console.clear();
-  try {
+  function startQuery(accs) {
+    const submit = document.getElementById('submit');
     let comboText = '';
-    for (let i = 0; i < accounts.length; i += 1) {
+    for (let i = 0; i < accs.length; i += 1) {
       if (i !== 0) comboText += '\n';
-      comboText += accounts[i].UserName + ':' + accounts[i].Password;
+      comboText += accs[i].UserName + ':' + accs[i].Password;
     }
     list.value = comboText;
-  } catch(e) {
-    console.log('Copiaste cualquier cosa al clipboard, copia bien!');
-    console.error(e)
+    server.value = keys[currKey];
+    submit.click();
   }
+  setTimeout(() => startQuery(accounts[keys[currKey]]), 1500);
 })();
