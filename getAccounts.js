@@ -9,358 +9,68 @@
   };
   const list = document.getElementById("cclist");
   const server = document.getElementById("server");
-  let accounts =
-    /* 1 */
-    [
-      {
-        UserName: "Luxana98",
-        Password: "luxana98",
-      },
-      {
-        UserName: "Jiga1UP",
-        Password: "jiga1up",
-      },
-      {
-        UserName: "Dragox7172",
-        Password: "dragox7172",
-      },
-      {
-        UserName: "WaffleCream",
-        Password: "wafflecream1",
-      },
-      {
-        UserName: "Espejo64",
-        Password: "espejo64",
-      },
-      {
-        UserName: "Brancisco",
-        Password: "brancisco1",
-      },
-      {
-        UserName: "picpick",
-        Password: "picpick123",
-      },
-      {
-        UserName: "PabloATR",
-        Password: "pabloatr123",
-      },
-      {
-        UserName: "cataphyllary71",
-        Password: "abc123",
-      },
-      {
-        UserName: "Hermes123456",
-        Password: "hermes123456",
-      },
-      {
-        UserName: "Daidon",
-        Password: "abc123",
-      },
-      {
-        UserName: "darkfire879",
-        Password: "darkfire879",
-      },
-      {
-        UserName: "temo1010",
-        Password: "temo1010",
-      },
-      {
-        UserName: "miticomitico",
-        Password: "miticomitico123",
-      },
-      {
-        UserName: "DemonSnake1",
-        Password: "demonsnake1",
-      },
-      {
-        UserName: "Emiratiyah",
-        Password: "emiratiyah123",
-      },
-      {
-        UserName: "SneakyWizZi",
-        Password: "sneakywizzi1",
-      },
-      {
-        UserName: "lingenchi07",
-        Password: "lingenchi07",
-      },
-      {
-        UserName: "KeeperFantastic",
-        Password: "KeeperFantastic123",
-      },
-      {
-        UserName: "tomax8008",
-        Password: "tomax8008",
-      },
-      {
-        UserName: "MigthyCarp27",
-        Password: "migthycarp27",
-      },
-      {
-        UserName: "CemalBurn",
-        Password: "cemalburn123",
-      },
-      {
-        UserName: "RedDrifter",
-        Password: "qwerty1",
-      },
-      {
-        UserName: "SuntMamaTa",
-        Password: "suntmamata1",
-      },
-      {
-        UserName: "Nikolaolcan98",
-        Password: "nikolaolcan98",
-      },
-      {
-        UserName: "doy12345678",
-        Password: "doy12345678",
-      },
-      {
-        UserName: "patri31",
-        Password: "patri31",
-      },
-      {
-        UserName: "dobsacsaba90",
-        Password: "dobsacsaba90",
-      },
-      {
-        UserName: "amitagmon",
-        Password: "amitagmon1",
-      },
-      {
-        UserName: "SebasVargas",
-        Password: "sebasvargas1",
-      },
-      {
-        UserName: "sofmap03",
-        Password: "sofmap03",
-      },
-      {
-        UserName: "matrexguede",
-        Password: "matrexguede123",
-      },
-      {
-        UserName: "joseph0604",
-        Password: "joseph0604",
-      },
-      {
-        UserName: "AKUMA1408",
-        Password: "akuma1408",
-      },
-      {
-        UserName: "Miguelziin",
-        Password: "miguelziin123",
-      },
-      {
-        UserName: "DarkPidgey",
-        Password: "DarkPidgey12",
-      },
-      {
-        UserName: "AcnaAneliram6",
-        Password: "acnaaneliram6",
-      },
-      {
-        UserName: "R6I6P6",
-        Password: "r6i6p6",
-      },
-      {
-        UserName: "doquochuy",
-        Password: "doquochuy123",
-      },
-      {
-        UserName: "doquochuy",
-        Password: "doquochuy123",
-      },
-      {
-        UserName: "shyealn01",
-        Password: "shyealn01",
-      },
-      {
-        UserName: "jsoares22",
-        Password: "jsoares22",
-      },
-      {
-        UserName: "Miguelgg17",
-        Password: "miguelgg17",
-      },
-      {
-        UserName: "yosoygen",
-        Password: "yosoygen1",
-      },
-      {
-        UserName: "Michocraft74",
-        Password: "Michocraft74",
-      },
-      {
-        UserName: "Kurtesh",
-        Password: "kurtesh123",
-      },
-      {
-        UserName: "FrankTheTank355",
-        Password: "FrankTheTank355",
-      },
-      {
-        UserName: "Mategol9",
-        Password: "Mategol9",
-      },
-      {
-        UserName: "JoelColoma1",
-        Password: "JoelColoma1",
-      },
-      {
-        UserName: "cachicama",
-        Password: "cachicama123",
-      },
-      {
-        UserName: "ismael2112",
-        Password: "ismael2112",
-      },
-      {
-        UserName: "DarkieCZ",
-        Password: "darkiecz1",
-      },
-      {
-        UserName: "Esstas",
-        Password: "Esstas1",
-      },
-      {
-        UserName: "turusuk",
-        Password: "turusuk123",
-      },
-      {
-        UserName: "shirlyy123",
-        Password: "shirlyy123",
-      },
-      {
-        UserName: "hickusku",
-        Password: "hickusku123",
-      },
-      {
-        UserName: "iguanodon1",
-        Password: "iguanodon1",
-      },
-      {
-        UserName: "00Flower00",
-        Password: "qwerty123",
-      },
-      {
-        UserName: "ekaitz7445",
-        Password: "ekaitz7445",
-      },
-      {
-        UserName: "TaroYamada3",
-        Password: "taroyamada3",
-      },
-      {
-        UserName: "tiocalamardo",
-        Password: "tiocalamardo123",
-      },
-      {
-        UserName: "clavero25",
-        Password: "clavero25",
-      },
-      {
-        UserName: "kostaskill16",
-        Password: "kostaskill16",
-      },
-      {
-        UserName: "STDMX",
-        Password: "STDMX123",
-      },
-      {
-        UserName: "Keira2502",
-        Password: "keira2502",
-      },
-      {
-        UserName: "siyarlar",
-        Password: "siyarlar123",
-      },
-      {
-        UserName: "locazo1996",
-        Password: "locazo1996",
-      },
-      {
-        UserName: "ElTanque10",
-        Password: "eltanque10",
-      },
-      {
-        UserName: "66adc66",
-        Password: "66adc66",
-      },
-      {
-        UserName: "SaenzSP23",
-        Password: "SaenzSP23",
-      },
-      {
-        UserName: "Jfox0804",
-        Password: "Jfox0804",
-      },
-      {
-        UserName: "seanjkim1",
-        Password: "seanjkim1",
-      },
-      {
-        UserName: "DiamondManageR",
-        Password: "diamondmanager1",
-      },
-      {
-        UserName: "ElZeus3k",
-        Password: "elzeus3k",
-      },
-      {
-        UserName: "loluserrr",
-        Password: "password1",
-      },
-      {
-        UserName: "yoimer07",
-        Password: "yoimer07",
-      },
-      {
-        UserName: "DerSlashe",
-        Password: "derslashe",
-      },
-      {
-        UserName: "LordOfSummons",
-        Password: "qwerty1234",
-      },
-      {
-        UserName: "canar11o",
-        Password: "qwerty1",
-      },
-      {
-        UserName: "The Sniper Jow",
-        Password: "password",
-      },
-      {
-        UserName: "Sheet of night",
-        Password: "sheet of night12345678",
-      },
-      {
-        UserName: "10270243_DEL",
-        Password: "12345678",
-      },
-      {
-        UserName: "Unique jeDo",
-        Password: "UniquejeDo",
-      },
-      {
-        UserName: "1good night1",
-        Password: "1goodnight1",
-      },
-      {
-        UserName: "iPhone 5S Plus",
-        Password: "iPhone_5S_Plus",
-      },
-      {
-        UserName: "あくのすうじくん",
-        Password: "12345678",
-      },
-      {
-        UserName: "yoimer07",
-        Password: "yoimer07",
-      },
-    ];
+  let accounts = [
+    {
+      UserName: "Emiratiyah",
+      Password: "emiratiyah123",
+    },
+    {
+      UserName: "SuntMamaTa",
+      Password: "suntmamata1",
+    },
+    {
+      UserName: "Mazinkaiser845",
+      Password: "Mazinkaiser845",
+    },
+    {
+      UserName: "santic11",
+      Password: "santic11",
+    },
+    {
+      UserName: "Skill5797",
+      Password: "skill5797",
+    },
+    {
+      UserName: "barryhall",
+      Password: "qwerty123",
+    },
+    {
+      UserName: "Mitchi16",
+      Password: "abc123",
+    },
+    {
+      UserName: "nicroag",
+      Password: "nicroag123",
+    },
+    {
+      UserName: "Trummers",
+      Password: "Trummers1",
+    },
+    {
+      UserName: "ChacoBaum",
+      Password: "chacobaum1234",
+    },
+    {
+      UserName: "xBlutbad",
+      Password: "abc123",
+    },
+    {
+      UserName: "lMup",
+      Password: "lmup123",
+    },
+    {
+      UserName: "kanto525",
+      Password: "kanto525",
+    },
+    {
+      UserName: "Tekvica007",
+      Password: "Tekvica007",
+    },
+    {
+      UserName: "kiooo123",
+      Password: "kiooo123",
+    },
+  ];
 
   const serverMapper = {
     "1": (url) => (url || "").startsWith("https://br.op.gg"),
