@@ -9,68 +9,7 @@
   };
   const list = document.getElementById("cclist");
   const server = document.getElementById("server");
-  let accounts = [
-    {
-      UserName: "Emiratiyah",
-      Password: "emiratiyah123",
-    },
-    {
-      UserName: "SuntMamaTa",
-      Password: "suntmamata1",
-    },
-    {
-      UserName: "Mazinkaiser845",
-      Password: "Mazinkaiser845",
-    },
-    {
-      UserName: "santic11",
-      Password: "santic11",
-    },
-    {
-      UserName: "Skill5797",
-      Password: "skill5797",
-    },
-    {
-      UserName: "barryhall",
-      Password: "qwerty123",
-    },
-    {
-      UserName: "Mitchi16",
-      Password: "abc123",
-    },
-    {
-      UserName: "nicroag",
-      Password: "nicroag123",
-    },
-    {
-      UserName: "Trummers",
-      Password: "Trummers1",
-    },
-    {
-      UserName: "ChacoBaum",
-      Password: "chacobaum1234",
-    },
-    {
-      UserName: "xBlutbad",
-      Password: "abc123",
-    },
-    {
-      UserName: "lMup",
-      Password: "lmup123",
-    },
-    {
-      UserName: "kanto525",
-      Password: "kanto525",
-    },
-    {
-      UserName: "Tekvica007",
-      Password: "Tekvica007",
-    },
-    {
-      UserName: "kiooo123",
-      Password: "kiooo123",
-    },
-  ];
+  let accounts = []
 
   const serverMapper = {
     "1": (url) => (url || "").startsWith("https://br.op.gg"),
