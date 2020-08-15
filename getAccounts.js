@@ -9,21 +9,23 @@
   };
   const list = document.getElementById("cclist");
   const server = document.getElementById("server");
-  let accounts = []
+  let accounts = [];
 
-  const serverMapper = {
-    "1": (url) => (url || "").startsWith("https://br.op.gg"),
-    "2": (url) => (url || "").startsWith("https://eune.op.gg"),
-    "3": (url) => (url || "").startsWith("https://euw.op.gg"),
-    "4": (url) => (url || "").startsWith("https://jp.op.gg"),
-    "5": (url) => (url || "").startsWith("https://www.op.gg"),
-    "6": (url) => (url || "").startsWith("https://lan.op.gg"),
-    "7": (url) => (url || "").startsWith("https://las.op.gg"),
-    "8": (url) => (url || "").startsWith("https://na.op.gg"),
-    "9": (url) => (url || "").startsWith("https://oce.op.gg"),
-    "11": (url) => (url || "").startsWith("https://ru.op.gg"),
-    "12": (url) => (url || "").startsWith("https://tr.op.gg"),
-  };
+  const options = [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+  ];
+
   let updates = [];
   const getUpdate = (data) =>
     updates
@@ -101,7 +103,7 @@
   console.clear();
   function startQuery(accs) {
     if (!accs) return;
-    if (!serverMapper[list.value]) return;
+    if (!options.includes(list.value)) return;
     server.value = list.value;
     const submit = document.getElementById("submit");
     let comboText = "";
